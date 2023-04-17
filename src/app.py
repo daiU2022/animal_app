@@ -67,7 +67,7 @@ def predicts():
             return render_template('result.html', animalName=animalName_, image=base64_data)
         return redirect(request.url)
 
-    #GETメソッドの定義_
+    #GETメソッドの定義
     elif request.method == 'GET':
         return render_template('index.html')
     
